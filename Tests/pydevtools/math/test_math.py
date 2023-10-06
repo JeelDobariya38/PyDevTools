@@ -26,81 +26,81 @@ def test_add_double_value():
     result = math.add(42,55)
     assert result == 97
 
-# Testing the subtract function
-def test_subtract_integers():
-    result = math.subtract(1, 2, 3, 4)
+# Testing the sub function
+def test_sub_integers():
+    result = math.sub(1, 2, 3, 4)
     assert result == -8
 
-def test_subtract_floats():
-    result = math.subtract(1.5, 2.5, 3.5)
+def test_sub_floats():
+    result = math.sub(1.5, 2.5, 3.5)
     assert result == -4.5
 
-def test_subtract_mixed_types():
-    result = math.subtract(1, 2.5, 3, 4.5)
+def test_sub_mixed_types():
+    result = math.sub(1, 2.5, 3, 4.5)
     assert result == -9
 
-def test_subtract_empty():
-    result = math.subtract()
+def test_sub_empty():
+    result = math.sub()
     assert result == 0
 
-def test_subtract_single_value():
-    result = math.subtract(42)
+def test_sub_single_value():
+    result = math.sub(42)
     assert result == 42
 
-def test_subtract_double_value():
-    result = math.subtract(80,35)
+def test_sub_double_value():
+    result = math.sub(80,35)
     assert result == 45
 
-# Testing the multiply function
-def test_multiply_integers():
-    result = math.multiply(1, 2, 3, 4)
+# Testing the mult function
+def test_mult_integers():
+    result = math.mult(1, 2, 3, 4)
     assert result == 24
 
-def test_multiply_floats():
-    result = math.multiply(1.5, 2.5, 3.5)
+def test_mult_floats():
+    result = math.mult(1.5, 2.5, 3.5)
     assert result == 13.125
 
-def test_multiply_mixed_types():
-    result = math.multiply(1, 2.5, 3, 4.5)
+def test_mult_mixed_types():
+    result = math.mult(1, 2.5, 3, 4.5)
     assert result == 33.75
 
-def test_multiply_empty():
-    result = math.multiply()
+def test_mult_empty():
+    result = math.mult()
     assert result == 1
 
-def test_multiply_single_value():
-    result = math.multiply(42)
+def test_mult_single_value():
+    result = math.mult(42)
     assert result == 42
 
-def test_multiply_double_value():
-    result = math.multiply(70,5)
+def test_mult_double_value():
+    result = math.mult(70,5)
     assert result == 350
 
-# Testing the divide function
-def test_divide_integers():
-    result = math.divide(10, 2)
+# Testing the div function
+def test_div_integers():
+    result = math.div(10, 2)
     assert result == 5.0
 
-def test_divide_floats():
-    result = math.divide(10.5, 2.0)
+def test_div_floats():
+    result = math.div(10.5, 2.0)
     assert result == 5.25
 
-def test_divide_mixed_types():
-    result = math.divide(10, 2.5)
+def test_div_mixed_types():
+    result = math.div(10, 2.5)
     assert result == 4.0
 
-def test_divide_by_zero():
+def test_div_by_zero():
     with pytest.raises(ZeroDivisionError):
-        result = math.divide(10,0)
+        result = math.div(10,0)
 
-def test_divide_empty():
-    result = math.divide()
+def test_div_empty():
+    result = math.div()
     assert result == 1  # Dividing by nothing should result in 1
 
-def test_divide_single_value():
-    result = math.divide(42)
+def test_div_single_value():
+    result = math.div(42)
     assert result == 42
 
-def test_divide_double_value():
-    result = math.divide(70,35)
+def test_div_double_value():
+    result = math.div(70,35)
     assert result == 2
