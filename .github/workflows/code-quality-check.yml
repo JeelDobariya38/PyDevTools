@@ -25,13 +25,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pylint flake8 -r requirements.txt
-
+    
+    # Adjust the path accordingly if pydevtools is in a subdirectory
     - name: Run pylint
       run: |
         pylint pydevtools
-        # Adjust the path accordingly if pydevtools is in a subdirectory
-
+    
+    # Adjust the path accordingly if pydevtools is in a subdirectory
     - name: Run flake8
       run: |
         flake8 pydevtools
-        # Adjust the path accordingly if pydevtools is in a subdirectory
+        
