@@ -34,7 +34,7 @@ Here's a quick example of how to use the "PyDevTools" package:
 
 ```python
 # Import the math module from PyDevTools
-from PyDevTools.Math import math
+from pydevtools.math import math
 
 # Use a function from the math module
 result = math.add(5, 3)
@@ -46,4 +46,4 @@ For detailed information on each module and its functions, please refer to the d
 Contributions to "PyDevTools" are welcome! If you have ideas for improvements, bug fixes, or new features, please feel free to submit a pull request or open a new issue in repository.
 
 ### License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE.txt).
