@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/github/workflow/status/JeelDobariya38/PyDevTools/CI)](https://github.com/JeelDobariya38/PyDevTools/actions)
+[![Build Status](https://img.shields.io/github/workflow/status/JeelDobariya38/PyDevTools/RunPytest)](https://github.com/JeelDobariya38/PyDevTools/actions)
 # PyDevTools - Simplifying Python Development
 "PyDevTools" is a versatile utility package that provides a set of modules designed to streamline various aspects of Python development. Whether you're working on mathematical computations, managing input/output, handling files, or organizing data collections, "PyDevTools" has you covered.
 
