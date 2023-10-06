@@ -36,10 +36,15 @@ jobs:
         COVERAGE_THRESHOLD: 95  # Set your desired coverage threshold
 
     - name: Check coverage and fail if below threshold
-      run: |
-        coverage=$(pytest --cov-report=xml --cov=pydevtools --cov-fail-under=$COVERAGE_THRESHOLD)
-        echo "$coverage"
-      shell: bash
+  run: |
+    coverage=$(pytest --cov-report=xml --cov=pydevtools)
+    coverage_percentage=$(echo "$coverage" | grep "TOTAL" | awk '{print $NF}')
+    if (( $(echo "$coverage_percentage < $COVERAGE_THRESHOLD" | bc -l) )); then
+      echo "Code coverage is below the threshold. Failing the workflow."
+      exit 1
+    fi
+  env:
+    COVERAGE_THRESHOLD: 95  # Set your desired coverage threshold
   
   pytest:
     runs-on: ubuntu-latest
