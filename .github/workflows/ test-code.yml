@@ -49,6 +49,7 @@ jobs:
   
   
   pytest:
+    needs: test-coverage
     runs-on: ubuntu-latest
 
     steps:
