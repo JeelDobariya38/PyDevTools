@@ -11,6 +11,36 @@ on:
       - dev
 
 jobs:
+  test-coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  # Choose your Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Install project dependencies
+        pip install pytest pytest-cov   # Install pytest and coverage tools
+
+    - name: Run tests with coverage
+      run: |
+        pytest --cov=pydevtools
+      env:
+        COVERAGE_THRESHOLD: 95  # Set your desired coverage threshold
+
+    - name: Check coverage and fail if below threshold
+      run: |
+        coverage=$(pytest --cov-report=xml --cov=pydevtools --cov-fail-under=$COVERAGE_THRESHOLD)
+        echo "$coverage"
+      shell: bash
+  
   pytest:
     runs-on: ubuntu-latest
 
