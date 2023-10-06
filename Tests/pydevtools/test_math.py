@@ -1,5 +1,5 @@
 import pytest
-from pydevtools.math import math
+from pydevtools import math
 
 # Testing the add function
 def test_add_integers():
