@@ -1,9 +1,9 @@
 """
 math.py - Mathematical Operations Module
 
-This module provides basic mathematical operations such as addition, subtraction,
-multiplication, and division on numbers. It is designed to be flexible with support
-for variable-length argument lists.
+This module provides basic mathematical operations such as addition,
+subtraction, multiplication, and division on numbers. It is designed
+to be flexible with support for variable-length argument lists.
 
 Functions:
 - add(*nums: int | float) -> int | float: Adds multiple numbers.
@@ -17,6 +17,7 @@ Example:
     To multiply numbers: result = mult(2, 3, 4)
     To divide numbers: result = div(20, 2, 5)
 """
+
 
 def add(*nums: int | float) -> int | float:
     """
@@ -37,12 +38,13 @@ def add(*nums: int | float) -> int | float:
         total = total + num
     return total
 
+
 def sub(*nums: int | float) -> int | float:
     """
     Subtracts numbers.
 
     Args:
-        *nums (int or float): Variable-length list of numbers. 
+        *nums (int or float): Variable-length list of numbers.
             Subtracts each subsequent number from the first.
 
     Returns:
@@ -58,6 +60,7 @@ def sub(*nums: int | float) -> int | float:
             total = total - num
         return total
     return 0
+
 
 def mult(*nums: int | float) -> int | float:
     """
@@ -78,12 +81,13 @@ def mult(*nums: int | float) -> int | float:
         total = total * num
     return total
 
+
 def div(*nums: int | float) -> int | float:
     """
     Divides numbers.
 
     Args:
-        *nums (int or float): Variable-length list of numbers. 
+        *nums (int or float): Variable-length list of numbers.
             Divides each subsequent number by the first.
 
     Returns:
