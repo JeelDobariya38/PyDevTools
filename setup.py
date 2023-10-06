@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Pyutils',
+    name='pydevtools',
     version='0.1.0',
-    packages=find_packages(where="Pyutils"),
+    packages=find_packages(where="pydevtools"),
     install_requires=[
         'colorama',
     ],
@@ -17,7 +17,7 @@ setup(
     description='A collection of utility modules for Python development',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/JeelDobariya38/Pyutils',
+    url='https://github.com/JeelDobariya38/PyDevTools',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
