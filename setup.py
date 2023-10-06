@@ -10,6 +10,8 @@ setup(
     extras_require={
         'dev': [
             'pytest',
+            'pylint',
+            'flake8',
         ],
     },
     author='Jeel Dobariya',
