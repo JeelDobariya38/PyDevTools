@@ -1,4 +1,5 @@
-[![Build Status](https://img.shields.io/github/workflow/status/JeelDobariya38/PyDevTools/RunPytest)](https://github.com/JeelDobariya38/PyDevTools/actions)
+[![Pytest](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/%20test-code.yml/badge.svg?branch=main)](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/%20test-code.yml) [![Code Quality Check](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/code-quality-check.yml/badge.svg)](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/code-quality-check.yml)
+
 # PyDevTools - Simplifying Python Development
 "PyDevTools" is a versatile utility package that provides a set of modules designed to streamline various aspects of Python development. Whether you're working on mathematical computations, managing input/output, handling files, or organizing data collections, "PyDevTools" has you covered.
 
