@@ -1,4 +1,4 @@
-[![Pytest](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/test-code.yml/badge.svg?branch=main)](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/test-code.yml) [![Code Quality Check](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/code-quality-check.yml/badge.svg)](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/code-quality-check.yml)
+[![RunPytest](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/%20test-code.yml/badge.svg)](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/%20test-code.yml) [![Code Quality Check](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/code-quality-check.yml/badge.svg)](https://github.com/JeelDobariya38/PyDevTools/actions/workflows/code-quality-check.yml)
 
 # PyDevTools - Simplifying Python Development
 
