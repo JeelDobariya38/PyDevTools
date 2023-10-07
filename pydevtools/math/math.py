@@ -104,6 +104,7 @@ def div(*nums: int | float) -> int | float:
         return total
     return 1
 
+
 def rem(a: int | float, b: int | float) -> int | float:
     """
     module of two numbers.
