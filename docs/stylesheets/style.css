@@ -1,0 +1,21 @@
+body {
+    padding: 5px;
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+}
+
+header h1 {
+    color: #007BFF;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+ul {
+    list-style: circle;
+}
+
+a {
+    color: #007BFF;
+}
