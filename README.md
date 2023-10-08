@@ -15,13 +15,13 @@
 
 ## Installation
 
-### Installing a Most Latest Commited Code
+### Installing a Latest Code
 
-To use "PyDevTools" in your project, you can install it via pip:
+1. To use "PyDevTools" in your project, you can install it via pip:
 
-```bash
-pip install git+https://github.com/JeelDobariya38/PyDevTools.git
-```
+   ```bash
+   pip install git+https://github.com/JeelDobariya38/PyDevTools.git
+   ```
 
 ### Installing a Specific Release
 
@@ -40,20 +40,20 @@ If you want to install a specific release of PyDevTools, you can follow these st
    ```
    **Note**: don't forget to replace the `<tag>` with actual tag
 
-## Uninstalling
-
-To uninstall "PyDevTools," use the following command:
-
-```bash
-pip uninstall pydevtools
-```
-
 ## Updating
 
 To update "PyDevTools" to the latest version, run:
 
 ```bash
 pip install --upgrade git+https://github.com/JeelDobariya38/PyDevTools.git
+```
+
+## Uninstalling
+
+To uninstall "PyDevTools," use the following command:
+
+```bash
+pip uninstall pydevtools
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ For detailed information on each module and its functions, please refer to the [
 
 ## Contributing
 
-Contributions to "PyDevTools" are welcome! If you have ideas for improvements, bug fixes, or new features, please feel free to submit a [pull request](CONTRIBUTING.md) or open a new [issue](https://github.com/JeelDobariya38/PyDevTools/issues) in the repository.
+Contributions to "PyDevTools" are welcome! If you have ideas for improvements, bug fixes, or new features, please feel free to submit a [pull request](https://github.com/JeelDobariya38/PyDevTools/pulls) or open a new [issue](https://github.com/JeelDobariya38/PyDevTools/issues) in the repository.
 
 ## Code of Conduct
 

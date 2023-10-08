@@ -103,3 +103,21 @@ def div(*nums: int | float) -> int | float:
             total = total / num
         return total
     return 1
+
+
+def rem(a: int | float, b: int | float) -> int | float:
+    """
+    module of two numbers.
+
+    Args:
+        a (int or float): number.
+        b (int or float): number.
+
+    Returns:
+        int or float: The result of modulo operation.
+
+    Example:
+        >>> rem(70, 35)
+        0
+    """
+    return a % b
