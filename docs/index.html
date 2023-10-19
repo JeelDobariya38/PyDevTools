@@ -14,104 +14,110 @@
 <body>
     <header>
         <h1>PyDevTools - Simplifying Python Development</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="documentation.html">Docs</a>
+            <a href="download.html">Download</a>
+        </nav>
     </header>
-
-    <section>
-        <h2>Introduction</h2>
-        <p>
-            "PyDevTools" is a versatile utility package designed to streamline various aspects of Python development.
-            Whether you're working on mathematical computations, managing input/output, handling files, or organizing data
-            collections, "PyDevTools" has you covered.
-        </p>
-    </section>
-
-    <section>
-        <h2>Features</h2>
-        <ul>
-            <li><strong>Math:</strong> Mathematical operations made easy with a range of functions and utilities.(coming-soon)</li>
-            <li><strong>Input:</strong> Simplify user input handling and validation.(coming-soon)</li>
-            <li><strong>Output:</strong> Format and display output effectively for improved readability.(coming-soon)</li>
-            <li><strong>FileManager:</strong> Efficiently manage files and directories with convenience.(coming-soon)</li>
-            <li><strong>Collection:</strong> Tools to work with data collections and structures.(coming-soon)</li>
-            <li><strong>Database:</strong> Interact with databases seamlessly.(coming-soon)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Installation</h2>
-
-        <h3>Installing The Latest Commited Code</h3>
-        <ol>
-            <li>
-                To use "PyDevTools" in your project, you can install it via pip:
-                <pre class="lang-bash"><code class="trim-code">
-                    pip install git+https://github.com/JeelDobariya38/PyDevTools.git
-                </code></pre>
-            </li>
-        </ol>
-
-        <h3>Installing a Specific Release</h3>
-        <ol>
-            <li>Visit the <a href="https://github.com/JeelDobariya38/PyDevTools/releases" target="_blank">Releases</a>
-                page on GitHub.</li>
-            <li>Browse through the list of releases to find the version you want to install.</li>
-            <li>Once you've identified the desired release, look for the tag associated with it (e.g., `v1.0.0`).</li>
-            <li>Use the following command to install the specific release using pip:
-                <pre class="lang-bash"><code class="trim-code">
-                    pip install git+https://github.com/JeelDobariya38/PyDevTools.git@&lt;tag&gt;
-                </code></pre>
-                <p><strong>Note:</strong> Don't forget to replace `&lt;tag&gt;` with the actual tag.</p>
-            </li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Updating</h2>
-        <pre class="lang-bash"><code class="trim-code">
-            pip install --upgrade git+https://github.com/JeelDobariya38/PyDevTools.git
-        </code></pre>
-    </section>
-
-    <section>
-        <h2>Uninstalling</h2>
-        <pre class="lang-bash"><code class="trim-code">
-            pip uninstall pydevtools
-        </code></pre>
-    </section>
-
-    <section>
-        <h2>Usage</h2>
-        <p>Here's a quick example of how to use the "PyDevTools" package:</p>
-        <pre class="lang-py"><code class="trim-code">
-            from pydevtools.math import math
-
-            # Use a function from the math module
-            result = math.add(5, 3)
-            print(result)  # Output: 8
-        </code></pre>
-        <p>For detailed information on each module and its functions, please refer to the <a
-                href="https://jeeldobariya38.github.io/PyDevTools/" target="_blank">documentation</a>.</p>
-    </section>
-
-    <section>
-        <h2>Contributing</h2>
-        <p>Contributions to "PyDevTools" are welcome! If you have ideas for improvements, bug fixes, or new features,
-            please feel free to submit a <a href="https://github.com/JeelDobariya38/PyDevTools/pulls" target="_blank">pull request</a> or open a new <a
-                href="https://github.com/JeelDobariya38/PyDevTools/issues" target="_blank">issue</a> in the repository.
-        </p>
-    </section>
-
-    <section>
-        <h2>Code of Conduct</h2>
-        <p>Please review our <a href="https://github.com/JeelDobariya38/PyDevTools" target="_blank">Code of Conduct</a> before contributing to the
-            project.</p>
-    </section>
-
-    <section>
-        <h2>License</h2>
-        <p>This project is licensed under the <a href="https://github.com/JeelDobariya38/PyDevTools" target="_blank">MIT License</a>.</p>
-    </section>
-
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                "PyDevTools" is a versatile utility package designed to streamline various aspects of Python development.
+                Whether you're working on mathematical computations, managing input/output, handling files, or organizing data
+                collections, "PyDevTools" has you covered.
+            </p>
+        </section>
+    
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Math:</strong> Mathematical operations made easy with a range of functions and utilities.(coming-soon)</li>
+                <li><strong>Input:</strong> Simplify user input handling and validation.(coming-soon)</li>
+                <li><strong>Output:</strong> Format and display output effectively for improved readability.(coming-soon)</li>
+                <li><strong>FileManager:</strong> Efficiently manage files and directories with convenience.(coming-soon)</li>
+                <li><strong>Collection:</strong> Tools to work with data collections and structures.(coming-soon)</li>
+                <li><strong>Database:</strong> Interact with databases seamlessly.(coming-soon)</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Installation</h2>
+    
+            <h3>Installing The Latest Commited Code</h3>
+            <ol>
+                <li>
+                    To use "PyDevTools" in your project, you can install it via pip:
+                    <pre class="lang-bash"><code class="trim-code">
+                        pip install git+https://github.com/JeelDobariya38/PyDevTools.git
+                    </code></pre>
+                </li>
+            </ol>
+    
+            <h3>Installing a Specific Release</h3>
+            <ol>
+                <li>Visit the <a href="https://github.com/JeelDobariya38/PyDevTools/releases" target="_blank">Releases</a>
+                    page on GitHub.</li>
+                <li>Browse through the list of releases to find the version you want to install.</li>
+                <li>Once you've identified the desired release, look for the tag associated with it (e.g., `v1.0.0`).</li>
+                <li>Use the following command to install the specific release using pip:
+                    <pre class="lang-bash"><code class="trim-code">
+                        pip install git+https://github.com/JeelDobariya38/PyDevTools.git@&lt;tag&gt;
+                    </code></pre>
+                    <p><strong>Note:</strong> Don't forget to replace `&lt;tag&gt;` with the actual tag.</p>
+                </li>
+            </ol>
+        </section>
+    
+        <section>
+            <h2>Updating</h2>
+            <pre class="lang-bash"><code class="trim-code">
+                pip install --upgrade git+https://github.com/JeelDobariya38/PyDevTools.git
+            </code></pre>
+        </section>
+    
+        <section>
+            <h2>Uninstalling</h2>
+            <pre class="lang-bash"><code class="trim-code">
+                pip uninstall pydevtools
+            </code></pre>
+        </section>
+    
+        <section>
+            <h2>Usage</h2>
+            <p>Here's a quick example of how to use the "PyDevTools" package:</p>
+            <pre class="lang-py"><code class="trim-code">
+                from pydevtools.math import math
+    
+                # Use a function from the math module
+                result = math.add(5, 3)
+                print(result)  # Output: 8
+            </code></pre>
+            <p>For detailed information on each module and its functions, please refer to the <a
+                    href="https://jeeldobariya38.github.io/PyDevTools/" >documentation</a>.</p>
+        </section>
+    
+        <section>
+            <h2>Contributing</h2>
+            <p>Contributions to "PyDevTools" are welcome! If you have ideas for improvements, bug fixes, or new features,
+                please feel free to submit a <a href="https://github.com/JeelDobariya38/PyDevTools/pulls">pull request</a> or open a new <a
+                    href="https://github.com/JeelDobariya38/PyDevTools/issues">issue</a> in the repository.
+            </p>
+        </section>
+    
+        <section>
+            <h2>Code of Conduct</h2>
+            <p>Please review our <a href="../CODE_OF_CONDUCT.md">Code of Conduct</a> before contributing to the
+                project.</p>
+        </section>
+    
+        <section>
+            <h2>License</h2>
+            <p>This project is licensed under the <a href="../LICENSE.txt" target="_blank">MIT License</a>.</p>
+        </section>
+    </main>
+    
 </body>
 
 </html>
