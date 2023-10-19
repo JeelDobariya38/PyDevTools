@@ -7,7 +7,7 @@ def test_addition_poperty():
         b = randint(1,999)
         c = randint(1,999)
 
-        assert math.add(a, b) == math.sub(b, a) # a + b = b + a
+        assert math.add(a, b) == math.add(b, a) # a + b = b + a
         assert math.add(a,(-1 * a)) == 0 # a + (-a) = 0
         assert math.add(a, 0) == a # a + 0 = a
         assert math.add(math.add(a, b), c) == math.add(a, math.add(b,c)) # (a + b) + c = a + (b + c)
@@ -20,7 +20,7 @@ def test_subtraction_poperty():
         c = randint(1,999)
 
         assert math.sub(a, b) != math.sub(b, a) # a - b != b - a
-        assert math.sub(a,(-1 * a)) != 2*a # a - (-a) = 2(a)
+        assert math.sub(a,(-1 * a)) == 2*a # a - (-a) = 2(a)
         assert math.sub(a, 0) == a # a - 0 = a
         assert math.sub(math.sub(a, b), c) != math.sub(a, math.sub(b,c)) # (a - b) - c = a - (b - c)
         assert a * math.sub(b, c) == math.sub(a*b, a*c) # a * (b - c) = a*b - a*c
@@ -43,5 +43,5 @@ def test_division_poperty():
         c = randint(1,999)
 
         assert math.div(a, b) != math.div(b, a) # a / b != b / a
-        assert math.div(a,(-1 * a)) != -1 # a / -1 / a =  -1
+        assert math.div(a,(-1 * a)) == -1 # a / -1 / a =  -1
         assert math.div(math.div(a, b), c) != math.div(a, math.div(b,c)) # (a / b) / c = a / (b / c)
