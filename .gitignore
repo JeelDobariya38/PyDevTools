@@ -8,3 +8,6 @@ myenv/
 
 .vscode/
 *.code-workspace
+
+.pytest_cache
+.coverage
