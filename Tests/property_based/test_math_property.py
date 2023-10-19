@@ -42,5 +42,4 @@ def test_division_poperty():
         b = randint(1,999)
         c = randint(1,999)
 
-        assert math.div(a, b) != math.div(b, a) # a / b != b / a
         assert math.div(a,(-1 * a)) == -1 # a / -1 / a =  -1
