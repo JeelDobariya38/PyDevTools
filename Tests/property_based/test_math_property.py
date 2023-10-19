@@ -19,11 +19,12 @@ def test_subtraction_poperty():
         b = randint(1,999)
         c = randint(1,999)
 
-        assert math.sub(a, b) != math.sub(b, a) # a - b != b - a
-        assert math.sub(a,(-1 * a)) == 2*a # a - (-a) = 2(a)
-        assert math.sub(a, 0) == a # a - 0 = a
-        assert math.sub(math.sub(a, b), c) != math.sub(a, math.sub(b,c)) # (a - b) - c = a - (b - c)
-        assert a * math.sub(b, c) == math.sub(a*b, a*c) # a * (b - c) = a*b - a*c
+        if a-b != 0:
+            assert math.sub(a, b) != math.sub(b, a) # a - b != b - a
+            assert math.sub(a,(-1 * a)) == 2*a # a - (-a) = 2(a)
+            assert math.sub(a, 0) == a # a - 0 = a
+            assert math.sub(math.sub(a, b), c) != math.sub(a, math.sub(b,c)) # (a - b) - c = a - (b - c)
+            assert a * math.sub(b, c) == math.sub(a*b, a*c) # a * (b - c) = a*b - a*c
 
 def test_multiplication_poperty():
     for i in range(100):
