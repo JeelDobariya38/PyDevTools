@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="prism/prism.css">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <script src="prism/prism.js"></script>
     <title>PyDevTools Documentation</title>
+    <script src="scripts/trimmer.js"></script>
+    <script src="prism/prism.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,9 @@
         <ol>
             <li>
                 To use "PyDevTools" in your project, you can install it via pip:
-                <pre class="lang-bash"><code>pip install git+https://github.com/JeelDobariya38/PyDevTools.git</code></pre>
+                <pre class="lang-bash"><code class="trim-code">
+                    pip install git+https://github.com/JeelDobariya38/PyDevTools.git
+                </code></pre>
             </li>
         </ol>
 
@@ -54,7 +57,9 @@
             <li>Browse through the list of releases to find the version you want to install.</li>
             <li>Once you've identified the desired release, look for the tag associated with it (e.g., `v1.0.0`).</li>
             <li>Use the following command to install the specific release using pip:
-                <pre class="lang-bash"><code>pip install git+https://github.com/JeelDobariya38/PyDevTools.git@&lt;tag&gt;</code></pre>
+                <pre class="lang-bash"><code class="trim-code">
+                    pip install git+https://github.com/JeelDobariya38/PyDevTools.git@&lt;tag&gt;
+                </code></pre>
                 <p><strong>Note:</strong> Don't forget to replace `&lt;tag&gt;` with the actual tag.</p>
             </li>
         </ol>
@@ -62,23 +67,28 @@
 
     <section>
         <h2>Updating</h2>
-        <pre class="lang-bash"><code>pip install --upgrade git+https://github.com/JeelDobariya38/PyDevTools.git</code></pre>
+        <pre class="lang-bash"><code class="trim-code">
+            pip install --upgrade git+https://github.com/JeelDobariya38/PyDevTools.git
+        </code></pre>
     </section>
 
     <section>
         <h2>Uninstalling</h2>
-        <pre class="lang-bash"><code>pip uninstall pydevtools</code></pre>
+        <pre class="lang-bash"><code class="trim-code">
+            pip uninstall pydevtools
+        </code></pre>
     </section>
 
     <section>
         <h2>Usage</h2>
         <p>Here's a quick example of how to use the "PyDevTools" package:</p>
-        <pre class="lang-py"><code>from pydevtools.math import math
+        <pre class="lang-py"><code class="trim-code">
+            from pydevtools.math import math
 
-# Use a function from the math module
-result = math.add(5, 3)
-print(result)  # Output: 8
-</code></pre>
+            # Use a function from the math module
+            result = math.add(5, 3)
+            print(result)  # Output: 8
+        </code></pre>
         <p>For detailed information on each module and its functions, please refer to the <a
                 href="https://jeeldobariya38.github.io/PyDevTools/" target="_blank">documentation</a>.</p>
     </section>
