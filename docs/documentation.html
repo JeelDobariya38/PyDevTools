@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | PyDevTools</title>
+    <link rel="stylesheet" href="prism/prism.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="scripts/trimmer.js"></script>
+    <script src="prism/prism.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Documentation of PyDevTools</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="documentation.html">Docs</a>
+            <a href="download.html">Download</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Math">
+            <h2>Maths:</h2>
+            <div>
+                <h3>Adding Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.math import math
+        
+                    print(math.add(35,80))  # Output: 115
+                    print(math.add(1, 2, 3, 4)) # Output: 10
+                    print(math.add(1, 2.5, 3, 4.5))  # Output: 7.5
+                </code></pre>
+            </div>
+            <div>
+                <h3>Subtracting Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.math import math
+        
+                    print(math.sub(80,35))  # Output: 45
+                    print(math.sub(1, 2, 3, 4)) # Output: -8
+                    print(math.sub(1.5, 2.5, 3.5))  # Output: -4.5
+                </code></pre>
+            </div>
+            <div>
+                <h3>Multipling Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.math import math
+        
+                    print(math.mult(70,5))  # Output: 350
+                    print(math.mult(1, 2, 3, 4)) # Output: 24
+                    print(math.mult(1.5, 2.5, 3.5))  # Output: 13.125
+                </code></pre>
+            </div>
+            <div>
+                <h3>Dividing Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.math import math
+        
+                    print(math.div(10, 2))  # Output: 5.0
+                    print(math.div(10.5, 2.0)) # Output: 5.25
+                    print(math.div(10, 2, 7))  # Output: 0.7142857142857143
+                </code></pre>
+            </div>
+            <div>
+                <h3>Reminder of Division:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.math import math
+        
+                    print(math.rem(10, 2))  # Output: 0
+                    print(math.rem(10.5, 2.0)) # Output: 0.5
+                    print(math.rem(10, 2.5))  # Output: 0.0
+                </code></pre>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

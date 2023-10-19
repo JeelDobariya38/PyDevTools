@@ -1,15 +1,52 @@
-body {
-    padding: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200&display=swap');
+
+:root {
+    --font: 'Poppins', Arial, Helvetica, sans-serif, 'Courier New', Courier, monospace;
+    --header-font: Helvetica, monospace, sans-serif;
+    --primary-color: hsl(0, 0%, 100%); 
+    /* black #007BFF white black*/
+    --secondary-color: hsl(211, 100%, 50%);
+    --primary-background: hsl(0, 0%, 0%);
+    --secondary-background: hsl(170, 100%, 50%);
+    --active-color: hsl(10, 100%, 63%);
+    --secondary-active-color: hsl(20, 100%, 50%);
+}
+
+html, body {
+    padding: 0px;
     margin: 0px;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font);
+    background-color: var(--primary-background);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-background);
+    padding: 5px;
 }
 
 header h1 {
-    color: #007BFF;
+    color: var(--secondary-color);
+    margin: 5px;
+    font-family: var(--header-font);
+}
+
+header a {
+    color: var(--secondary-color);
+    margin: 2px;
+    font-size: 1.2em;
+}
+
+header a:hover {
+    color: var(--secondary-active-color);
+}
+
+main {
+    padding: 5px;
 }
 
 h2 {
-    color: #007BFF;
+    color: var(--secondary-color);
 }
 
 ul {
@@ -17,5 +54,11 @@ ul {
 }
 
 a {
-    color: #007BFF;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--active-color);
+    text-decoration: dashed;
 }

@@ -81,9 +81,13 @@ class Test_Mult_Function:
 
 # Testing the div function
 class Test_Div_Function:
-    def test_div_integers(self):
+    def test_div_two_integers(self):
         result = math.div(10, 2)
-        assert result == 5.0
+        assert result == 5
+    
+    def test_div_integers(self):
+        result = math.div(10, 2, 7)
+        assert result == 0.7142857142857143
 
     def test_div_floats(self):
         result = math.div(10.5, 2.0)
