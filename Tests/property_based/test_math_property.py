@@ -44,4 +44,3 @@ def test_division_poperty():
 
         assert math.div(a, b) != math.div(b, a) # a / b != b / a
         assert math.div(a,(-1 * a)) == -1 # a / -1 / a =  -1
-        assert math.div(math.div(a, b), c) != math.div(a, math.div(b,c)) # (a / b) / c = a / (b / c)
