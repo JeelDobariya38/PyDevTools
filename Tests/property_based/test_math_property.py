@@ -32,7 +32,6 @@ def test_multiplication_poperty():
         c = randint(1,999)
 
         assert math.mult(a, b) == math.mult(b, a) # a * b = b * a
-        assert math.mult(a,(-1 * a)) != -2*a # a * -1 * a = -2 * a
         assert math.mult(a, 0) == 0 # a * 0 = 0
         assert math.mult(math.mult(a, b), c) == math.mult(a, math.mult(b,c)) # (a * b) * c = a * (b * c)
 
