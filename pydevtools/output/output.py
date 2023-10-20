@@ -1,5 +1,6 @@
 from colorama import Fore, Style
 
+
 def print_output(message, color="white"):
     color_map = {
         "red": Fore.RED,
@@ -16,11 +17,14 @@ def print_output(message, color="white"):
 
     print(f"{selected_color}{message}{reset_style}")
 
+
 def print_info(message):
     print(f"{Fore.GREEN}[INFO]: {message}{Style.RESET_ALL}")
 
+
 def print_warning(message):
     print(f"{Fore.YELLOW}[WARNING]: {message}{Style.RESET_ALL}")
+
 
 def print_error(message):
     print(f"{Fore.RED}[ERROR]: {message}{Style.RESET_ALL}")
