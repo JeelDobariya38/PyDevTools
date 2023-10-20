@@ -1,7 +1,7 @@
 from colorama import Fore, Style
 
 
-def get_input(prompt, color):
+def get_input(prompt, color="white"):
     color_map = {
         "red": Fore.RED,
         "green": Fore.GREEN,
@@ -19,7 +19,7 @@ def get_input(prompt, color):
     return user_input
 
 
-def get_strinput(prompt, color):
+def get_strinput(prompt, color="white"):
     color_map = {
         "red": Fore.RED,
         "green": Fore.GREEN,
@@ -37,7 +37,7 @@ def get_strinput(prompt, color):
     return user_input
 
 
-def get_intinput(prompt, color):
+def get_intinput(prompt, color="white"):
     color_map = {
         "red": Fore.RED,
         "green": Fore.GREEN,
@@ -59,7 +59,7 @@ def get_intinput(prompt, color):
         raise ValueError("Input must be an integer.")
 
 
-def get_floatinput(prompt, color):
+def get_floatinput(prompt, color="white"):
     color_map = {
         "red": Fore.RED,
         "green": Fore.GREEN,
