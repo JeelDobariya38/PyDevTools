@@ -1,5 +1,6 @@
 from colorama import Fore, Style
 
+
 def get_input(prompt, color):
     color_map = {
         "red": Fore.RED,
@@ -17,6 +18,7 @@ def get_input(prompt, color):
 
     return user_input
 
+
 def get_strinput(prompt, color):
     color_map = {
         "red": Fore.RED,
@@ -33,6 +35,7 @@ def get_strinput(prompt, color):
     user_input = input(f"{selected_color}{prompt} (str): {Style.RESET_ALL}")
 
     return user_input
+
 
 def get_intinput(prompt, color):
     color_map = {
@@ -54,6 +57,7 @@ def get_intinput(prompt, color):
         return int_input
     except ValueError:
         raise ValueError("Input must be an integer.")
+
 
 def get_floatinput(prompt, color):
     color_map = {
