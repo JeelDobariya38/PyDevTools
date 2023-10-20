@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pydevtools',
-    version='1.1.0',
+    version='1.1.1',
     packages=find_packages(),
     install_requires=[
         'colorama',
@@ -10,7 +10,6 @@ setup(
     extras_require={
         'dev': [
             'pytest',
-            'pylint',
             'flake8',
         ],
     },
@@ -25,7 +24,12 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
     ],
+    package_data={
+        'pydevtools': ['py.typed', '*.pyi', '**/*.pyi'],
+    },
+    python_requires='>=3.10',
 )

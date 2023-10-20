@@ -18,11 +18,30 @@
             <a href="download.html">Download</a>
         </nav>
     </header>
+
     <main>
-        <section id="Math">
+        <section id="math">
             <h2>Maths:</h2>
-            <div>
+            
+            <div id="addition">
                 <h3>Adding Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def add(*nums: Union[int, float]) -> Union[int, float]:
+                        """
+                        Adds multiple numbers.
+
+                        Args:
+                            *nums (int or float): Variable-length list of numbers to be added.
+
+                        Returns:
+                            int or float: The sum of the provided numbers.
+
+                        Example:
+                            >>> add(2, 3, 5)
+                            10
+                        """
+                </code></pre>
+                <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
                     from pydevtools.math import math
         
@@ -31,8 +50,27 @@
                     print(math.add(1, 2.5, 3, 4.5))  # Output: 7.5
                 </code></pre>
             </div>
-            <div>
+
+            <div id="subratction">
                 <h3>Subtracting Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def sub(*nums: Union[int, float]) -> Union[int, float]:
+                        """
+                        Subtracts numbers.
+
+                        Args:
+                            *nums (int or float): Variable-length list of numbers.
+                                Subtracts each subsequent number from the first.
+
+                        Returns:
+                            int or float: The result of subtraction.
+
+                        Example:
+                            >>> sub(10, 2, 3)
+                            5
+                        """
+                </code></pre>
+                <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
                     from pydevtools.math import math
         
@@ -41,8 +79,26 @@
                     print(math.sub(1.5, 2.5, 3.5))  # Output: -4.5
                 </code></pre>
             </div>
-            <div>
+
+            <div id="multipication">
                 <h3>Multipling Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def mult(*nums: Union[int, float]) -> Union[int, float]:
+                        """
+                        Multiplies numbers.
+
+                        Args:
+                            *nums (int or float): Variable-length list of numbers to be multiplied.
+
+                        Returns:
+                            int or float: The product of the provided numbers.
+
+                        Example:
+                            >>> mult(2, 3, 4)
+                            24
+                        """
+                </code></pre>
+                <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
                     from pydevtools.math import math
         
@@ -51,8 +107,27 @@
                     print(math.mult(1.5, 2.5, 3.5))  # Output: 13.125
                 </code></pre>
             </div>
-            <div>
+
+            <div id="divison">
                 <h3>Dividing Numbers:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def div(*nums: Union[int, float]) -> Union[int, float]:
+                        """
+                        Divides numbers.
+
+                        Args:
+                            *nums (int or float): Variable-length list of numbers.
+                                Divides each subsequent number by the first.
+
+                        Returns:
+                            int or float: The result of division.
+
+                        Example:
+                            >>> div(20, 2, 5)
+                            2.0
+                        """
+                </code></pre>
+                <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
                     from pydevtools.math import math
         
@@ -61,14 +136,131 @@
                     print(math.div(10, 2, 7))  # Output: 0.7142857142857143
                 </code></pre>
             </div>
-            <div>
+
+            <div id="reminder">
                 <h3>Reminder of Division:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def rem(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+                        """
+                        Module of two numbers.
+
+                        Args:
+                            a (int or float): Number.
+                            b (int or float): Number.
+
+                        Returns:
+                            int or float: The result of modulo operation.
+
+                        Example:
+                            >>> rem(70, 35)
+                            0
+                        """
+                </code></pre>
+                <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
                     from pydevtools.math import math
         
                     print(math.rem(10, 2))  # Output: 0
                     print(math.rem(10.5, 2.0)) # Output: 0.5
                     print(math.rem(10, 2.5))  # Output: 0.0
+                </code></pre>
+            </div>
+        </section>
+        
+        <section id="input">
+            <h2>Input:</h2>
+            
+            <div id="getcoloredinput">
+                <h3>Get user-input with colored prompt:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def get_input(prompt: str, color: str = "white") -> str:
+                        """
+                        Get user input with an optional colorized prompt using Colorama.
+
+                        Args:
+                            prompt (str): The prompt message to display.
+                            color (str, optional): The color for the prompt. Should be one of the Colorama color constants.
+                                Defaults to "white" if not specified.
+
+                        Returns:
+                            str: The user's input as a string.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    
+                </code></pre>
+            </div>
+
+            <div id="getintegerinput">
+                <h3>Get user input:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def get_strinput(prompt: str, color: str = "white") -> str:
+                        """
+                        Get user input with an optional colorized prompt using Colorama and expect a string input.
+
+                        Args:
+                            prompt (str): The prompt message to display.
+                            color (str, optional): The color for the prompt. Should be one of the Colorama color constants.
+                                Defaults to "white" if not specified.
+
+                        Returns:
+                            str: The user's input as a string.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    
+                </code></pre>
+            </div>
+
+            <div id="getintegerinput">
+                <h3>Get integer input:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def get_intinput(prompt: str, color: str = "white") -> int:
+                        """
+                        Get user input with an optional colorized prompt using Colorama and expect an integer input.
+
+                        Args:
+                            prompt (str): The prompt message to display.
+                            color (str, optional): The color for the prompt. Should be one of the Colorama color constants.
+                                Defaults to "white" if not specified.
+
+                        Returns:
+                            int: The user's input as an integer.
+
+                        Raises:
+                            ValueError: If the user input cannot be converted to an integer.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    
+                </code></pre>
+            </div>
+
+            <div id="getfloatinput">
+                <h3>Get decimal number input:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def get_floatinput(prompt: str, color: str = "white") -> float:
+                        """
+                        Get user input with an optional colorized prompt using Colorama and expect a float input.
+
+                        Args:
+                            prompt (str): The prompt message to display.
+                            color (str, optional): The color for the prompt. Should be one of the Colorama color constants.
+                                Defaults to "white" if not specified.
+
+                        Returns:
+                            float: The user's input as a float.
+
+                        Raises:
+                            ValueError: If the user input cannot be converted to a float.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    
                 </code></pre>
             </div>
         </section>
