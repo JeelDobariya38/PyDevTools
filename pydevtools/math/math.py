@@ -1,11 +1,11 @@
-def add(*nums: int | float) -> int | float:
+def add(*nums):
     total = 0
     for num in nums:
         total = total + num
     return total
 
 
-def sub(*nums: int | float) -> int | float:
+def sub(*nums):
     if len(nums) != 0:
         total = nums[0]
         for num in nums[1:]:
@@ -14,14 +14,14 @@ def sub(*nums: int | float) -> int | float:
     return 0
 
 
-def mult(*nums: int | float) -> int | float:
+def mult(*nums):
     total = 1
     for num in nums:
         total = total * num
     return total
 
 
-def div(*nums: int | float) -> int | float:
+def div(*nums):
     if len(nums) != 0:
         total = nums[0] * nums[0]
         for num in nums:
@@ -30,5 +30,5 @@ def div(*nums: int | float) -> int | float:
     return 1
 
 
-def rem(a: int | float, b: int | float) -> int | float:
+def rem(a, b):
     return a % b
