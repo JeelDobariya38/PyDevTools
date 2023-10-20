@@ -6,6 +6,11 @@
     <title>Documentation | PyDevTools</title>
     <link rel="stylesheet" href="prism/prism.css">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <style>
+        span {
+            color: blue;
+        }
+    </style>
     <script src="scripts/trimmer.js"></script>
     <script src="prism/prism.js"></script>
 </head>
@@ -47,7 +52,7 @@
         
                     print(math.add(35,80))  # Output: 115
                     print(math.add(1, 2, 3, 4)) # Output: 10
-                    print(math.add(1, 2.5, 3, 4.5))  # Output: 7.5
+                    print(math.add(1, 2.5, 3, 4.5))  # Output: 11
                 </code></pre>
             </div>
 
@@ -166,7 +171,9 @@
                 </code></pre>
             </div>
         </section>
-        
+        <br>
+        <hr>
+        <br>
         <section id="input">
             <h2>Input:</h2>
             
@@ -188,7 +195,9 @@
                 </code></pre>
                 <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
-                    
+                    from pydevtools.input import input
+
+                    print(input.get_input("Hello", "blue"))
                 </code></pre>
             </div>
 
@@ -210,7 +219,9 @@
                 </code></pre>
                 <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
-                    
+                    from pydevtools.input import input
+
+                    print(input.get_strinput("Hello", "blue"))
                 </code></pre>
             </div>
 
@@ -235,7 +246,9 @@
                 </code></pre>
                 <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
-                    
+                    from pydevtools.input import input
+
+                    print(input.get_intinput("Hello", "blue"))
                 </code></pre>
             </div>
 
@@ -260,7 +273,121 @@
                 </code></pre>
                 <h5>Example</h5>
                 <pre class="lang-py"><code class="trim-code">
-                    
+                    from pydevtools.input import input
+
+                    print(input.get_floatinput("Hello", "blue"))
+                </code></pre>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="output">
+            <h2>Output:</h2>
+            
+            <div id="printcoloredoutput">
+                <h3>Print colored output:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def print_output(message, color="white") -> None:
+                        """
+                        Print a message with optional colorization using Colorama.
+
+                        Args:
+                            message (str): The message to be displayed.
+                            color (str, optional): The color for the message. Should be one of the Colorama color constants.
+                                Defaults to "white" if not specified.
+
+                        Returns:
+                            None
+                        
+                        Example:
+                            >>> print_output("Success!", "green")
+                            "Success!"
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.output import output
+
+                    output.print_output("hello world","magenta")
+                </code></pre>
+            </div>
+
+            <div id="printinfo">
+                <h3>Print information:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def print_info(message: str) -> None:
+                        """
+                        Print an informational message in green color.
+
+                        Args:
+                            message (str): The informational message to print.
+
+                        Returns:
+                            None
+
+                        Example:
+                            >>> print_info("This is an informational message.")
+                            [INFO]: This is an informational message.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.output import output
+
+                    output.print_info("hello world")
+                </code></pre>
+            </div>
+
+            <div id="printwarning">
+                <h3>Print warning messages:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def print_warning(message: str) -> None:
+                        """
+                        Print a warning message in yellow color.
+
+                        Args:
+                            message (str): The warning message to print.
+
+                        Returns:
+                            None
+
+                        Example:
+                            >>> print_warning("This is a warning message.")
+                            [WARNING]: This is a warning message.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.output import output
+
+                    output.print_warning("hello world")
+                </code></pre>
+            </div>
+
+            <div id="printerror">
+                <h3>Print error messages:</h3>
+                <pre class="lang-py"><code class="trim-code">
+                    def print_error(message: str) -> None:
+                        """
+                        Print an error message in red color.
+
+                        Args:
+                            message (str): The error message to print.
+
+                        Returns:
+                            None
+
+                        Example:
+                            >>> print_error("This is an error message.")
+                            [ERROR]: This is an error message.
+                        """
+                </code></pre>
+                <h5>Example</h5>
+                <pre class="lang-py"><code class="trim-code">
+                    from pydevtools.output import output
+
+                    output.print_error("hello world")
                 </code></pre>
             </div>
         </section>
