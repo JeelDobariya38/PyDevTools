@@ -23,8 +23,8 @@ def pow(a, b):
 
 
 def sqrt(a):
-    return a**(1/2)
+    return a**(1 / 2)
 
 
 def cbrt(a):
-    return a**(1/3)
+    return a**(1 / 3)
