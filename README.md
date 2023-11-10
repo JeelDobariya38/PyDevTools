@@ -36,7 +36,7 @@ If you want to install a specific release of PyDevTools, you can follow these st
 4. Use the following command to install the specific release using pip:
 
    ```bash
-   pip install git+https://github.com/JeelDobariya38/PyDevTools.git@<tag>
+   pip install git+https://github.com/JeelDobariya38/PyDevTools.git#<tag>
    ```
    **Note**: don't forget to replace the `<tag>` with actual tag
 

@@ -28,20 +28,14 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    # Assuming you have a requirements.txt file
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+    - name: Install Poetry
+      run: pip install poetry
 
-    # Additional step to install dependencies for coverage
-    - name: Install additional dependencies for coverage
-      run: |
-        pip install pytest
-        pip install coverage
+    - name: Install dependencies
+      run: poetry install
 
     - name: Run pytest with coverage
-      run: |
-        coverage run -m pytest
-        coverage report --fail-under=60
+      run: poetry run coverage run -m pytest
 
+    - name: Generate coverage report
+      run: poetry run coverage report --fail-under=60
