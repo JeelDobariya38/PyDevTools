@@ -108,18 +108,3 @@ def sqrt(a: int | float) -> int | float:
         >>> sqrt(16)
         4.0
     """
-
-def cbrt(a: int | float) -> int | float:
-    """
-    Calculate the cube root of a number.
-
-    Args:
-        a (int or float): The number for which to calculate the cube root.
-
-    Returns:
-        int or float: The cube root of the input number.
-
-    Example:
-        >>> cbrt(27)
-        3.0
-    """
