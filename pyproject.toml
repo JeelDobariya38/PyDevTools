@@ -24,12 +24,10 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.10"
 colorama = "^0.4.6"
+coverage = "^7.3.2"
 
 [tool.poetry.group.lint.dependencies]
 flake8 = "^6.1.0"
-
-[tool.poetry.group.test.dependencies]
-pytest = "^7.4.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
