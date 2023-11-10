@@ -1,3 +1,5 @@
+import math
+
 def add(a, b):
     return a + b
 
@@ -23,8 +25,5 @@ def pow(a, b):
 
 
 def sqrt(a):
-    return a**(1 / 2)
+    return math.round(a**(1 / 2))
 
-
-def cbrt(a):
-    return a**(1 / 3)

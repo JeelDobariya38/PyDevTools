@@ -41,9 +41,3 @@ def test_sqrt():
     assert arithmetic.sqrt(9) == 3
     assert arithmetic.sqrt(25) == 5
     assert arithmetic.sqrt(16) == 4
-
-# Test for the cbrt function
-def test_cbrt():
-    assert arithmetic.cbrt(8) == 2
-    assert arithmetic.cbrt(27) == 3
-    assert arithmetic.cbrt(64) == 4
