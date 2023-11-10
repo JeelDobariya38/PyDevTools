@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "pydevtools"
+version = "1.1.2"
+description = "A collection of utility modules for Python development"
+authors = ["Jeel Dobariya <dobariyaj34@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/JeelDobariya38/PyDevTools"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.package]
+include = ["py.typed"]
+exclude = ["Tests"]
+
+[tool.poetry.extras]
+dev = ["*.pyi", "**/*.pyi"]
+
+[tool.poetry.metadata]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
